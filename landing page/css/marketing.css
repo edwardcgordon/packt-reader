@@ -6,16 +6,14 @@ html, body {
 }
 
 p {
-  font-size: 1vw;
-  max-width: 50%;
-  text-align: left;
+  font-size: 1rem;
 }
 
 .navbar.navbar-inverse.landing.navbar-fixed-top {
 
 }
 
-.container {
+.container.full {
     height:93.5%;
     margin: 0;
     width: 100%;
@@ -67,19 +65,22 @@ p {
 
 h1 {
   color: #fff;
-  text-align: left;
-  font-size: 2.5vw;
+  font-size: 2.5rem;
+}
+
+.header-step {
+  padding-top: 15%;
+  color: #f5971f;
+  font-size: 4rem;
 }
 
 .header-step {
   color: #f5971f;
   font-size: 4rem;
-  text-align: left;
 }
 
 .header {
   color: #f5971f;
-  text-align: center;
   font-size: 5rem;
   margin-bottom: 10%;
 }
@@ -89,10 +90,8 @@ h1 {
 }
 
 .btn.cta {
-  width: 30%;
   background-color: #ff9800;
-  font-size: 1vw;
-  float: left;
+  font-size: 1rem;
   margin: 3% 0 0 0;
 }
 
@@ -101,15 +100,15 @@ h1 {
   /*-- Font Sizes --*/
 
   h1 {
-    font-size: 4vw;
+    font-size: 3rem;
   }
 
   .header-step {
-    font-size: 7vw;
+    font-size: 4rem;
   }
 
   p {
-    font-size: 2vw;
+    font-size: 1.1rem;
   }
 
   .fill {
@@ -129,7 +128,7 @@ h1 {
   .btn.cta {
     width: 60%;
     background-color: #ff9800;
-    font-size: 2vw;
+    font-size: 1.1rem;
     float: left;
     margin: 1% 0 0 20%;
   }
@@ -144,15 +143,15 @@ h1 {
   /*-- Font Sizes --*/
 
   h1 {
-    font-size: 8vw;
+    font-size: 2rem;
   }
 
   .header-step {
-    font-size: 10vw;
+    font-size: 2.5rem;
   }
 
   p {
-    font-size: 3vw;
+    font-size: 0.8rem;
   }
 
   .fill {
@@ -173,7 +172,7 @@ h1 {
   .btn.cta {
     width: 95%;
     background-color: #ff9800;
-    font-size: 3vw;
+    font-size: 0.8rem;
     float: left;
     margin: 1% 0 0 0;
   }
