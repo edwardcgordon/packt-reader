@@ -1,21 +1,22 @@
 
 html, body {
   height:100%;
-  font: 2em;
+  font-size: 1rem;
+  background: black;
 }
 
 p {
-  font-size: 2em;
+  font-size: 1vw;
   max-width: 50%;
-  margin: 5% 25%;
+  text-align: left;
 }
 
 .navbar.navbar-inverse.landing.navbar-fixed-top {
-  position: static;
+
 }
 
 .container {
-    height:100%;
+    height:93.5%;
     margin: 0;
     width: 100%;
     padding: 0;
@@ -31,6 +32,11 @@ p {
     border-style: dashed;
     border-width: thick;
     border-color: blue;
+
+}
+
+.fill.first {
+    margin-top: 64px;
 }
 
 .gap {
@@ -61,11 +67,21 @@ p {
 
 h1 {
   color: #fff;
+  text-align: left;
+  font-size: 2.5vw;
 }
 
 .header-step {
   color: #f5971f;
-  font-size: 5em;
+  font-size: 4rem;
+  text-align: left;
+}
+
+.header {
+  color: #f5971f;
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 10%;
 }
 
 .navbar-right {
@@ -75,5 +91,93 @@ h1 {
 .btn.cta {
   width: 30%;
   background-color: #ff9800;
-  font-size: 1.25em;
+  font-size: 1vw;
+  float: left;
+  margin: 3% 0 0 0;
+}
+
+@media (max-width: 1200px) {
+
+  /*-- Font Sizes --*/
+
+  h1 {
+    font-size: 4vw;
+  }
+
+  .header-step {
+    font-size: 7vw;
+  }
+
+  p {
+    font-size: 2vw;
+  }
+
+  .fill {
+    height: auto;
+    min-height: auto;
+    padding-bottom: 10%;
+  }
+
+  .fill.one {
+
+  }
+
+  p {
+    max-width: 100%;
+  }
+
+  .btn.cta {
+    width: 60%;
+    background-color: #ff9800;
+    font-size: 2vw;
+    float: left;
+    margin: 1% 0 0 20%;
+  }
+
+
+
+}
+
+
+@media (max-width: 600px) {
+
+  /*-- Font Sizes --*/
+
+  h1 {
+    font-size: 8vw;
+  }
+
+  .header-step {
+    font-size: 10vw;
+  }
+
+  p {
+    font-size: 3vw;
+  }
+
+  .fill {
+    height: auto;
+    min-height: auto;
+    padding-bottom: 10%;
+  }
+
+  .fill.one {
+    background-image: none;
+    background-color: black;
+  }
+
+  p {
+    max-width: 100%;
+  }
+
+  .btn.cta {
+    width: 95%;
+    background-color: #ff9800;
+    font-size: 3vw;
+    float: left;
+    margin: 1% 0 0 0;
+  }
+
+
+
 }
