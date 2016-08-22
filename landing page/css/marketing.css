@@ -5,6 +5,13 @@ html, body {
   background: black;
 }
 
+input.form-control {
+    font-family: FontAwesome, "Lato", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
 p {
   font-size: 1rem;
 }
