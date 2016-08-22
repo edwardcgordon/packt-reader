@@ -46,17 +46,17 @@ p {
 
 .fill.one {
   background-image: url("../images/map-image.jpg");
-  background-size: 100%;
+  background-size: cover;
 }
 
 .fill.one.card {
   background-image: url("../images/card-image.jpg");
-  background-size: 100%;
+  background-size: cover;
 }
 
 .fill.one.plan {
   background-image: url("../images/plan-image.jpg");
-  background-size: 100%;
+  background-size: cover;
 }
 
 .marketing-content {
@@ -70,7 +70,7 @@ h1 {
 }
 
 .header-step {
-  padding-top: 35%;
+  padding-top: 15%;
   color: #f5971f;
   font-size: 4rem;
 }
@@ -96,7 +96,7 @@ h1 {
   margin: 3% 0 0 0;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px) and (max-height: 600px){
 
   /*-- Font Sizes --*/
 
@@ -188,7 +188,6 @@ h1 {
     float: left;
     margin: 1% 0 0 0;
   }
-
 
 
 }
