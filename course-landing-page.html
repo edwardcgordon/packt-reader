@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+
+    <title>Mapt - Developer Skills Delivered</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/bootstrap-xl.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+    <link href="css/marketing.css" rel="stylesheet">
+
+    <!-- JW PLayer -->
+    <script src="http://jwpsrv.com/library/wtlhcMn8EeK6QxIxOQulpA.js"></script>
+    <script>jwplayer.key="7X7gEquLPDCl3Fb0QHfeLw6uigKrZOv2vYmh0xeIwlM=";</script>
+
+
+
+    <!-- Devicons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
+    <!-- Prism -->
+    <link rel="stylesheet" href="css/prism.css">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat|Lato:400,500,700' rel='stylesheet' type='text/css'>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="language-markup">
+<!-- Modal -->
+            <div class="modal fade" id="pricingModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <h5>Pro Payment Options</h5>
+                        <hr>
+                        <form class="">
+                          <div class="form-group">
+                            <div class="radio ml15">
+                              <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" >
+                                <b>Monthly Plan</b> - $29.99/month (billed monthly)
+                              </label>
+                            </div>
+                            <div class="radio ml15">
+                              <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+                                <b>Annual Plan</b> - $24.99/month ($299 billed annually)
+                              </label>
+                            </div>
+                             <div class="radio ml15">
+                              <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                <b>18m Plan</b> - $23.32/month ($412 billed every 18 months)
+                              </label>
+                            </div>
+                          </div>
+                        </form>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#" class="btn btn-primary btn-lg pull-right pl15 pr15 mr5">Subscribe</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+  <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog login-modal" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+
+                        <h4 class="text-center" id="myModalLabel">Sign In</h4>
+                        <form ng-submit="login()" class="form-signin ng-pristine ng-valid">
+                            <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <div class="form-group">
+                                <a href="/account/password" target="_self" class="small">Forgotten Password?</a>
+                            </div>
+                            <div class="alert alert-danger login-error ng-binding" role="alert" style="display: none;">
+                                Sorry, you entered an invalid email address and password combination. <a href="/account/password" target="_self">Have you forgotten your password?</a>
+                            </div>
+                             <a href="dashboard.html" type="submit" class="btn btn-primary btn-block btn-lg">Submit</a>
+                        </form>
+
+                  </div>
+                    <div class="modal-footer">
+                        <a role="button" href="#"  data-toggle="modal" data-target="#accountModal">Create a New Account</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="accountModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog account-modal" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+
+                        <h4 class="text-center" id="myModalLabel">Create Account</h4>
+                        <form ng-submit="login()" class="form-signin ng-pristine ng-valid">
+                            <input name="name" type="name" class="form-control mb20" id="firstName" placeholder="First Name">
+                            <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+                            <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Choose Password">
+                            <div class="form-group">
+                                <div class="checkbox ml10">
+                                    <label class="pl10">
+                                        <input type="checkbox" value="" checked>
+                                    </label><small>Untick this box if you don't want to receive news and promotions</small>
+                                </div>
+                                <div class="g-recaptcha" data-sitekey="6Lc9ZRITAAAAAB3_JIdLV2juRqjDxoN9PZMsTq52"></div>
+                                <p class="mt15"><small>By clicking 'Create Account', you are agreeing to our <a href="books/info/packt/privacy">Policy</a> and <a href="books/info/packt/terms-and-conditions">Terms &amp; Conditions</a></small></p>
+                            </div>
+                            <div class="alert alert-danger login-error ng-binding" role="alert" style="display: none;">
+                                Sorry, you entered an invalid email address and password combination. <a href="/account/password" target="_self">Have you forgotten your password?</a>
+                            </div>
+                            <input type="submit" class="btn btn-primary btn-block btn-lg" value="Create Account">
+                        </form>
+
+                  </div>
+                    <div class="modal-footer">
+                        <a role="button" href="#"  data-toggle="modal" data-target="#myModal">Back to Login</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+    <div id="wrapper">
+
+        <!-- Top Nav Bar -->
+        <nav class="navbar navbar-inverse landing navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="brand-logo" href="dashboard.html"><img src="images/logo.png"></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="library-lo.html">Library</a></li>
+                        <li><button data-toggle="modal" data-target="#myModal" type="button" class="btn btn-warning navbar-btn mr15 ml15">Sign in</button></li>
+
+
+                    </ul>
+                    <form class="navbar-form navbar-right search-nav-collapse">
+                        <div class="form-group pull-right" style="display:inline;">
+                              <input class="form-control" type="text" placeholder="&#xf002;  Search the library...">
+                        </div>
+                    </form>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+
+        <div class="container full">
+            <div class="fill first one">
+              <div class="container">
+                <div class="col-sm-8">
+                  <h1 class="header-step">Step 1.</h1><h1>Map your skills.</h1>
+                    <p>
+                      Our Skill Map charts the technology world for you. By telling us what technology skills you know, Mapt places your skills within our skills map; created by over a decade of experience and feedback from 50,000 developers.</p>
+                    <p>
+                      This means you can carry on writing code and shipping software, and our Skill Map will make sure you're always learning what you need to know to be more effective at what you do best.
+                    </p>
+                  <button type="button" class="btn btn-primary">Start Mapping Your Skills Today</button>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="gap">
+              <div class="marketing-content">
+                <h5 class="text-center mt0" style="color: #fff;">"Thanks for providing such an awesome service that's focused on helping real-world working developers gain the skills and knowledge they want or need!"</h5>
+                <p class="text-center mb0" style="color: #ffab39;">Ken Reynolds<strong>  UI/UX Developer at Prime Lending</strong></p>
+
+              </div>
+            </div>
+
+            <div class="fill one plan">
+              <div class="container">
+                <div class="col-sm-offset-4 col-sm-8 text-right">
+                  <h1 class="header-step">Step 2.</h1><h1>Choose a Skill Plan.</h1>
+
+
+                      <p>
+                        After you've mapped out your skills, you pick a destination. Do you want to keep on top of your career? Skill up in another role? Or just want to see where your skills can be best utilized? No matter what you want to achieve, Skill Plans will help you get there.
+                      </p>
+
+                      <p>
+                        Skill Plans tell you the critical skills you need to learn to get to the top of your field and stay there. They are continually monitored and updated to make sure you’re always prepared for tomorrow.
+                      </p>
+                  <button type="button" class="btn btn-primary">See all of our Skill Plans</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="gap">
+              <div class="marketing-content">
+                <h5 class="text-center mt0" style="color: #fff;">"Not only have I found resources to improve my skills as a Web Developer, I have also discovered resources that help me with hobby projects."</h5>
+                <p class="text-center mb0" style="color: #ffab39;">Craig A. Hancock <strong>Web Developer at Miles Media Group, LLP</strong></p>
+
+              </div>
+            </div>
+
+
+            <div class="fill one card">
+              <div class="container">
+                <div class="col-sm-8">
+                  <h1 class="header-step">Step 3.</h1><h1>Learn from Skill Cards.</h1>
+                    <p>
+                      Skill Cards help you map your current skills, assess and build your proficiency, and learn new skills. Each Skill Card represents a key skill within a topic or technology, helping you understand the major components of learning and then mastering a tech, and breaking down your Skill Plan into more manageable units.
+                    </p>
+                    <p>
+                      Skill Cards draw from Packt's 3,500 ebook and video courses and show you the most relevant content to help you learn from.
+                    </p>
+
+                  <button type="button" class="btn btn-primary">Browse All Skill Cards</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="gap">
+              <div class="marketing-content">
+                <h5 class="text-center mt0" style="color: #fff;">
+                  "Packt is my first resource on topics that I need to learn... be it Python Design Patterns, Linux shell scripting... a video course about UX Design - Packt have got me covered with all that I need."
+                </h5>
+                <p class="text-center mb0" style="color: #ffab39;">Oliver Jakobi <strong>Full Stack Web Developer at THREEPEAKS Web Design</strong></p>
+
+              </div>
+            </div>
+
+            
+          </div>
+
+        </div>
+
+          <!-- JAVASCRIPT BLOCKS -->
+
+          <!-- jQuery Script-->
+          <script src="js/jquery.js"></script>
+
+          <!-- Bootstrap Core JavaScript -->
+          <script src="js/bootstrap.min.js"></script>
+
+
+
+
+    </body>
