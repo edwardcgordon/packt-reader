@@ -16,6 +16,10 @@ p {
   font-size: 1rem;
 }
 
+b {
+  color: #f5971f;
+}
+
 .navbar.navbar-inverse.landing.navbar-fixed-top {
 
 }
