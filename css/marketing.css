@@ -80,12 +80,7 @@ h1 {
 }
 
 .header-step {
-  padding-top: 25%;
-  color: #f5971f;
-  font-size: 4rem;
-}
-
-.header-step {
+  padding-top: 20vh;
   color: #f5971f;
   font-size: 4rem;
 }
@@ -106,7 +101,7 @@ h1 {
   margin: 3% 0 0 0;
 }
 
-@media (max-width: 1200px), (max-height: 600px){
+@media (max-width: 1200px), (max-height: 880px){
 
   /*-- Font Sizes --*/
 
